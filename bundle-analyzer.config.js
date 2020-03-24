@@ -4,12 +4,12 @@
 module.exports = {
   files: [
     {
-      test: 'dist/*',
+      test: 'packages/test-bundles/dist/*',
       maxSize: '100 kB',
       compression: 'none',
     },
     {
-      test: 'dist/*',
+      test: 'packages/test-bundles/dist/*',
       maxSize: '10 kB',
       compression: 'gzip',
     },
