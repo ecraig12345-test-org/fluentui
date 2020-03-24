@@ -10,6 +10,7 @@ import {
 import { Icon } from '../../Icon';
 import { ICheckbox, ICheckboxProps, ICheckboxStyleProps, ICheckboxStyles } from './Checkbox.types';
 import { KeytipData } from '../../KeytipData';
+import { DetailsList } from '../../DetailsList';
 
 export interface ICheckboxState {
   /** Is true when Uncontrolled control is checked. */
@@ -132,6 +133,7 @@ export class CheckboxBase extends React.Component<ICheckboxProps, ICheckboxState
             <label className={this._classNames.label} htmlFor={this._id}>
               <div className={this._classNames.checkbox} data-ktp-target={keytipAttributes['data-ktp-target']}>
                 <Icon iconName="CheckMark" {...checkmarkIconProps} className={this._classNames.checkmark} />
+                <DetailsList items={['hi']} />
               </div>
               {onRenderLabel(this.props, this._onRenderLabel)}
             </label>
